@@ -92,7 +92,7 @@ este tema.
 \section{El número $\pi$ como irracional y trascendente}
 
 El hecho de que $\pi$ sea un número irracional implica que no puede ser expresado a modo de
-cociente entre dos númers enteros, tal y como fue demostrado por Johann Heinrich Lambert en
+cociente entre dos números enteros, tal y como fue demostrado por Johann Heinrich Lambert en
 1761.
 
 Además, se trata asimismo de un número trascendente, es decir, que no corresponde a la raíz de 
@@ -102,12 +102,34 @@ del histórico problema de la cuadratura del círculo, carente de solución.\footno
 de la cuadratura del círculo consiste en hallar, utilizando tan sólo la regla y el compás, un
 cuadrado que posea un área igual a la de un círculo dado. Se trata de un reto matemático sin
 solución que fue abordado repetidas veces a lo largo de la historia, desde la antigüedad clásica
-hasta el siglo XIX, cuando fue demostrada su irresolubilidad.}
+hasta el siglo XIX, cuando fue demostrada su irresolubilidad.} Uno de los métodos empleados para
+la aproximación de $\pi$ se encuentra, como no podía ser de otro modo, en estrecha relación
+con las características de la circunferencia, pues su valor corresponde puede obtenerse a partir
+de la siguiente integral:
+
+\begin{center}
+\[\pi = \int_{0}^{1}  \! \frac{4}{1+x^{2}} \, dx\]
+\end{center}
+
+El procedimiento iterativo de cálculo requerido para la evaluación numérica de dicha integral
+viene representado gráficamente en la figura que se muestra a continuación:
+
+\begin{figure}[!th]
+\begin{center}\includegraphics[height=5cm, width=8cm]{images/aprox.eps}
+\caption{Integración para el cálculo de $\pi$.}
+\label{int}
+\end{center}
+\end{figure}
 
 A pesar del carácter irracional del número $\pi$, continúa siendo averiguada la mayor cantidad
 posible de cifras decimales, si bien recurriendo sólo a cincuenta de ellos es posible describir
 con precisión la curvatura del Universo con un margen de error inferior a las dimensiones de
-un protón. 
+un protón. Véase el sitio web \cite{100dig} para consultar los primeros 100000 dígitos de $\pi$.
+
+En este sentido, los algoritmos de carácter numérico-iterativo son ideales para su ejecución en 
+potentes computadoras con elevada potencia de cálculo, permitiendo la obtención de un considerable
+número de cifras en reducidos marcos temporales. Tal es el caso del método de integración reflejado
+en la figura \ref{int}. 
 
 \section{Presencia de $\pi$ en las ciencias físicas}
 
@@ -139,7 +161,9 @@ de $\pi$ en los siguientes ámbitos:
       $F = \frac{|q_{1}q_{2}|}{4 \pi \epsilon_{0} r^{2}}$
       \end{center}
     \item
-      La tercera Ley de Kepler:
+      La tercera Ley de Kepler\footnote{La tercera Ley de Kepler ley establece que para 
+      cualquier planeta, el cuadrado de su período orbital es directamente proporcional 
+      al cubo de la longitud del semieje mayor de su órbita elíptica.}:
       \begin{center}
       $\frac{P^{2}}{a^{3}} = \frac{(2\pi)^{2}}{g(M + m)}$
       \end{center}
@@ -160,10 +184,20 @@ Pues bien, el símbolo actual y tan comúnmente empleado fue adoptado por primera 
 por el matemático William Jones, siguiendo los pasos de su predecesor William Oughtred. 
 Unos años después, la gran popularidad de esta convención vendría de la mano del destacado 
 matemático y físico suizo Leonhard Euler (ver figura \ref{euler}), quien consagró la 
-utilización de este símbolo para la posteridad.
+utilización para la posteridad la utilización de la decimosexta letra del alfabeto griego
+para la representación de esta constante matemática.
+
+Euler residió en Rusia y Alemania durante la mayor parte de su vida y realizó importantes 
+descubrimientos en áreas tan diversas como el cálculo o la teoría de grafos. También introdujo 
+gran parte de la moderna terminología y notación matemática, particularmente para el área del 
+análisis matemático, como por ejemplo la noción de función matemática. Asimismo se le conoce 
+por sus trabajos en los campos de la mecánica, óptica y astronomía. Se trata del principal 
+matemático del siglo XVIII y uno de los más grandes y prolíficos de todos los tiempos.  Una 
+afirmación atribuida a Pierre Simon Laplace expresa la influencia de Euler en los matemáticos 
+posteriores: «Lean a Euler, lean a Euler, él es el maestro de todos nosotros.»
 
 \begin{figure}[!th]
-\begin{center}\includegraphics[height=5cm, width=4cm]{euler.eps}
+\begin{center}\includegraphics[height=4cm, width=3cm]{images/euler.eps}
 \caption{Leonhard Euler}
 \label{euler}
 \end{center}
@@ -176,6 +210,11 @@ Madrid, España, RBA Publicaciones, 2011.
 {2}
 \bibitem{hist_pi} \textsc{Petr Beckmann}, \textit{Historia de pi}, Madrid, Madrid, España,
 Instituto Nacional de Antropología e Historia, 2007.
+{3}
+\bibitem{100dig} Los 100 000 primeros dígitos de pi: 
+\begin{center}
+http://www.geom.uiuc.edu/~huberty/math5337/groupe/digits.html
+\end{center}
 \end{thebibliography}
 
 \end{document}
