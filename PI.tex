@@ -1,0 +1,168 @@
+\documentclass[spanish,a4paper,10pt]{article}
+
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{doc}
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{\textbf{Curiosidades sobre el número $\pi$}}
+\author{\emph{Alba Crespo Pérez} \\ {alu 0100846461}}
+\date{9 de abril de 2014}
+
+\maketitle
+
+\begin{abstract}
+\begin{center}
+A través del presente artículo se exponen diversas curiosidades matemáticas 
+sobre el número $\pi$ y la evolución histórica de su descubrimiento.
+\end{center}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Características del número $\pi$}
+
+\subsection{Definiciones matemáticas}
+
+La definición más común de $\pi$ establece que su valor correponde a la 
+relación existente entre la longitud de una circunferencia y su diámetro.
+En consecuencia, $\pi$ es también el área de un círculo unitario en el plano
+euclídeo, así como el menor número real positivo que verifica la ecuación
+$sen(x) = 0$. De igual forma, es posible proporcionar dos definiciones 
+analíticas de esta ubicua constante matemática: 
+\begin{itemize}
+    \item 
+      Equivale a la menor solución de la siguiente ecuación compleja: 
+      \begin{center}
+      $e^{ix} + 1 = 0$
+      \end{center}
+    \item
+      La ecuación diferencial $S''(x) + S(x) = 0$, para la que existe solución
+      única bajo las condiciones de contorno $S(0) = 0$ y $S'(0) = 1$, tiene
+      como raíz positiva más pequeña al número $\pi$.
+\end{itemize}
+
+\subsection{Evolución histórica}
+
+A continuación se presenta una tabla resumen de las distintas aproximaciones del
+número $\pi$ logradas por diversos matemáticos desde la Antigüedad hasta mediados
+del siglo XV, reseñando los márgenes de error de cada aproximación expresados en
+partes por millón.
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l|l|c|c|r|}
+\hline
+AÑO        & MATEMÁTICO O DOCUMENTO   & CULTURA        & APROXIMACIÓN                & ERROR      \\ \hline
+1900 a.C.  & Papiro de Ahmes          & Egipcia        & $2^{8}/3^{4} = 3.1605$      & 6016 ppm   \\ \hline
+1600 a.C.  & Tablilla de Susa         & Babilónica     & $25/8 = 3.125$              & 5282 ppm   \\ \hline
+500 a.C.   & Bandhayana               & India          & 3.09                        & 16422 ppm  \\ \hline
+250 a.C.   & Arquímedes de Siracusa   & Griega         & $211875/67441 = 3.14163$    & 13.15 ppm  \\ \hline
+150 d.C    & Claudio Ptolomeo         & Greco-egipcia  & $377/120 = 3.14166...$      & 23.56 ppm  \\ \hline
+263 d.C    & Wang Fan                 & China          & $157/50 = 3.14$             & 507 ppm    \\ \hline
+300 d.C    & Chang Hong               & China          & $10^{1/2} = 3.1623$         & 6584 ppm   \\ \hline
+500 d.C    & Aryabhata                & India          & 3.1416                      & 2.34 ppm   \\ \hline
+600 d.C    & Brahmagupta              & India          & $10^{1/2} = 3.1623$         & 6584 ppm   \\ \hline
+800 d.C    & Al-Jwarizmi              & Persa          & 3.1416                      & 2.34 ppm   \\ \hline
+1220 d.C   & Fibonacci                & Italiana       & 3.141818                    & 72.73 ppm  \\ \hline
+1400 d.C   & Madhava                  & India          & 3.14159265359               & 0.085 ppm  \\ \hline
+1424 d.C   & Al-Kashi                 & Persa          & $2\pi = 6.283185307179...$  & 0.1 ppm    \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{El número $\pi$ hasta finales de la Edad Media.}
+\label{history}
+\end{table}
+
+Vemos así que los errores cometidos con las distintas aproximaciones de $\pi$ muestran
+una tendencia irregular a la disminución a lo largo del tiempo, si bien en ocasiones se 
+produce una regresión al pasado al recurrir a valores considerablemente inexactos obtenidos
+en siglos anteriores, como es el caso del matemático Brahmagupta en el año 600 d.C, o del 
+italiano Fibonnaci, cuyo margen de error asciende a las 72.73 ppm (ver cuadro \ref{history}).
+
+\section{El número $\pi$ como irracional y trascendente}
+
+El hecho de que $\pi$ sea un número irracional implica que no puede ser expresado a modo de
+cociente entre dos númers enteros, tal y como fue demostrado por Johann Heinrich Lambert en
+1761.
+
+Además, se trata asimismo de un número trascendente, es decir, que no corresponde a la raíz de 
+ningún polinomio de coeficientes enteros, hecho que fue probado por el matemático alemán 
+Ferdinand Lindemann durante el siglo XIX cerrando con ello una dilatada investigación acerca
+del histórico problema de la cuadratura del círculo, carente de solución.\footnote{El problema
+de la cuadratura del círculo consiste en hallar, utilizando tan sólo la regla y el compás, un
+cuadrado que posea un área igual a la de un círculo dado. Se trata de un reto matemático sin
+solución que fue abordado repetidas veces a lo largo de la historia, desde la antigüedad clásica
+hasta el siglo XIX, cuando fue demostrada su irresolubilidad.}
+
+A pesar del carácter irracional del número $\pi$, continúa siendo averguada la mayor cantidad
+posible de cifras decimales, si bien recurriendo sólo a cincuenta de ellos es posible describir
+con precisión la curvatura del Universo con un margen de error inferior a las dimensiones de
+un protón. 
+
+\section{Presencia de $\pi$ en las ciencias físicas}
+
+Pese a no constituir una constante física por sí misma, este número aparece repetidamente en 
+ecuaciones físicas que describen los principios fundamentales del Universo, debido en gran parte
+a su relación con la naturaleza del círculo y, por ende, con el sistema de coordenadas esféricas.
+Así, cabe destacar la presencia de $\pi$ en los siguientes ámbitos:
+
+\begin{itemize}
+    \item 
+      La expresión de la constante cosmológica: 
+      \begin{center}
+      $\Lambda = \frac{8 \pi G}{3 c^{2}}$
+      \end{center}
+    \item
+      El principio de incertidumbre de Heisenberg:
+      \begin{center}
+      $\Delta x \Delta p \geq \frac{h}{4\pi}$
+      \end{center}
+    \item
+      La ecuación del campo de Einstein para la relatividad general:
+      \begin{center}
+      $R_{ik} - \frac{g_{ik}R}{2} + \Lambda g_{ik} = \frac{8 \pi G}{c^{4}}T_{ik}$
+      \end{center}
+    \item
+      La Ley de Coulomb para la fuerza eléctrica:
+      \begin{center}
+      $F = \frac{|q_{1}q_{2}|}{4 \pi \epsilon_{0} r^{2}}$
+      \end{center}
+    \item
+      La tercera Ley de Kepler:
+      \begin{center}
+      $\frac{P^{2}}{a^{3}} = \frac{(2\pi)^{2}}{g(M + m)}$
+      \end{center}
+    \item
+      La permeabilidad magnética del vacío:
+      \begin{center}
+      $\mu_{0} = 4\pi 10^{-7} N/A^{2}$
+      \end{center}
+\end{itemize}
+
+\subsection{Representación de $\pi$}
+
+A propósito de la presencia de $\pi$ en las ecuaciones físicas, cabe preguntarse:
+\begin{center}
+\emph{¿de dónde procede el símbolo utilizado para la representación de esta constante?}
+\end{center}
+Pues bien, el símbolo actual y tan comúnmente empleado (ver figura \ref{sympi}) fue adoptado 
+por primera vez en 1706 por el matemático William Jones, siguiendo los pasos de su predecesor 
+William Oughtred. Unos años después, la gran popularidad de esta convención vendría de la mano
+del destacado matemático y físico suizo Leonhard Euler, quien consagró la utilización de este 
+símbolo para la posteridad.
+
+\begin{figure}[!th]
+\begin{center}\includegraphics[width=1\textwidth]{pi.eps}
+\caption{16º letra del alfabeto griego}
+\label{sympi}
+\end{center}
+\end{figure}
+
+\end{document}
+
